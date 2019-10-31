@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_vertical|center_horizontal|center"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="bottom|center">
+
+        <ImageView
+            android:id="@+id/shakeImageViewCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alarmbuz"
+            android:padding="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/textViewQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:text="@string/scanQR"
+            android:textColor="@color/textall"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/dalsi" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_weight="0.9"
+        android:background="@color/dalsi"
+        android:gravity="center">
+
+        <com.nipunbirla.qrreaderview.QRCodeReaderView
+            android:id="@+id/qrread"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/dalsi" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/background" />
+
+</LinearLayout>

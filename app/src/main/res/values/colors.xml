@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="neaktivni">#50ffffff</color>
+    <color name="aktivni">#DA33B5E5</color>
+    <color name="background">#212121</color>
+    <color name="primaryColor">#dd2c00</color>
+    <color name="primaryLightColor">#ff6434</color>
+    <color name="primaryDarkColor">#ce93d8</color>
+    <color name="primaryDarkColorZaloha">#a30000</color>
+    <color name="primaryTextColor">#dddddd</color>
+    <color name="pozadi">#dd2c00</color>
+    <color name="textall">#ffffff</color>
+    <color name="dalsi">#42a5f5</color>
+
+</resources>

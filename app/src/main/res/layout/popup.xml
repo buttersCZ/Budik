@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:foregroundGravity="center"
+    android:gravity="center_vertical|center_horizontal"
+    app:layout_anchorGravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/swipeButton"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewBudik"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/swipeButton"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/alarmbuz" />
+    </LinearLayout>
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:background="@color/background"
+        app:button_background="@color/background"
+        app:button_bottom_padding="10dp"
+        app:button_image_disabled="@drawable/cancel96"
+        app:button_image_enabled="@drawable/cancel96"
+        app:button_left_padding="10dp"
+        app:button_right_padding="10dp"
+        app:button_top_padding="10dp"
+        app:inner_text="Přetáhni pro vypnutí"
+        app:inner_text_background="@color/background"
+        app:inner_text_color="@color/textall"
+        app:inner_text_left_padding="20dp"
+        app:inner_text_size="18dp"></com.ebanx.swipebtn.SwipeButton>
+
+</RelativeLayout>

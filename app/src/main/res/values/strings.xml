@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Budík</string>
+    <string name="action_settings">Settings</string>
+    <string name="alarm_sound">Zvuk budíku</string>
+    <string name="repeating">Opakování</string>
+    <string name="monday">Po</string>
+    <string name="tuesday">Út</string>
+    <string name="wendsday">St</string>
+    <string name="thursday">Čt</string>
+    <string name="friday">Pá</string>
+    <string name="saturday">So</string>
+    <string name="sunday">Ne</string>
+    <string name="workdays">Pracovní dny</string>
+    <string name="sound_detail">Detailní nastavení zvuku</string>
+    <string name="vibration">Vibrace</string>
+    <string name="addingsound">Postupně zvyšující se hlasitost</string>
+    <string name="soundlevel">Úroveň hlasitosti</string>
+    <string name="typeOfCancel">Způsob vypnutí budíku</string>
+    <string name="moveTracking">Hlídat probuzení pohybem</string>
+    <string name="alarmOffPushButton">Stisknout tlačítko</string>
+    <string name="alarmOffQR">Naskenovat QR</string>
+    <string name="alarmOffCalculate">Vypočítat příklad</string>
+    <string name="alarmOffShake">Zatřást telefonem</string>
+    <string name="add">Uložit</string>
+    <string name="settings">Detail</string>
+    <string name="newAlarm">Nový budík</string>
+    <string name="scanQR">Naskenuj QR kód k vypnutí budíku</string>
+    <string name="shake">Zastřes se mnou!</string>
+    <string name="calculate">Vypočítej následující příklad</string>
+    <string name="digitalAlarm">Digitální budík (výchozí)</string>
+    <string name="bells">Zvonky</string>
+    <string name="calculateInfoHeader">Typy příkladů</string>
+    <string name="gallerySounds">Galerie vyzvánění</string>
+    <string name="calculateMain1">Úroveň 1 - Například 10 + 12</string>
+    <string name="calculateMain2">Úroveň 2 - Například 100 + 36</string>
+    <string name="calculateMain3">Úroveň 3 - Například 20 * 3</string>
+    <string name="calculateMain4">Úroveň 4 - Například 50 * 24</string>
+    <string name="moveInfo">Pokud po určité době po vypnutí budíku, nedojde k pohybu telefonu, budík se znovu spustí</string>
+    <string name="moveMain">Sledování pohybu</string>
+    <string name="OKMove">OK</string>
+    <string name="alarmAnalog">Klasický budík</string>
+    <string name="alarmJungle">Džungle</string>
+    <string name="alarmPolice">Policejní siréna</string>
+    <string name="alarmOcena">Oceán</string>
+
+
+
+
+
+</resources>

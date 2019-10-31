@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dalsi"
+    android:gravity="center_vertical|center_horizontal|center"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/dalsi"
+        android:gravity="bottom"
+        android:paddingStart="25dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="@string/gallerySounds"
+            android:textColor="@color/textall"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="25dp">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupOwnSongs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/song1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/digitalAlarm"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/song2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bells"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/song3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alarmAnalog"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/song4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alarmPolice"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/song5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alarmJungle"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+
+                <RadioButton
+                    android:id="@+id/song6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/alarmOcena"
+                    android:textSize="12sp"
+                    android:theme="@style/MyCheckBox" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/dalsi"
+        android:gravity="center_vertical"
+        android:paddingStart="25dp">
+
+        <Button
+            android:id="@+id/okSong"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="OK"
+            android:theme="@style/MyCheckBox" />
+
+    </TableRow>
+
+</LinearLayout>

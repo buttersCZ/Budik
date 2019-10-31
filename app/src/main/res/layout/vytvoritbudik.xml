@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cooLa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/layoutMainSc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/dalsi">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="ZzZzzzZZZzBudík"
+                    android:textColor="@color/textall"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    app:srcCompat="@drawable/night" />
+            </android.support.design.widget.NavigationView>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:headerBackground="@color/textall"
+                    android:theme="@style/AppTheme.Picker"
+                    android:timePickerMode="spinner">
+
+
+                </TimePicker>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom|center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/alarm_sound"
+                            android:textColor="@color/primaryTextColor"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textall" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Zvuky budíků"
+                                    android:theme="@style/MyCheckBox" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:maxLines="1"
+                                    android:text="Vlastní zvonění"
+                                    android:textColor="@color/textall"
+                                    android:textColorLink="@color/dalsi"
+                                    android:theme="@style/MyCheckBox" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical|center_horizontal|center|end"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageButton
+                                    android:id="@+id/imageButtonPlay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/background"
+                                    app:srcCompat="@drawable/rightplay" />
+
+                                <TextView
+                                    android:id="@+id/textViewNazevSong"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="TextView"
+                                    android:textColor="@color/textall"
+                                    android:textSize="14sp" />
+                            </TableRow>
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:paddingLeft="10dp"
+                        android:text="@string/sound_detail"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textall" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp">
+
+                        <CheckBox
+                            android:id="@+id/vibracecheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vibration"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="20dp">
+
+                        <CheckBox
+                            android:id="@+id/zvysHlasCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/addingsound"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="27dp"
+                        android:paddingTop="2dp">
+
+                        <TextView
+                            android:id="@+id/soundLevelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:maxLines="1"
+                            android:text="@string/soundlevel"
+                            android:textColor="@color/textall" />
+
+                        <SeekBar
+                            android:id="@+id/soundLevelSeekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/dalsi" />
+
+                        <TextView
+                            android:id="@+id/textViewProcenta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal|center"
+                            android:paddingRight="10dp"
+                            android:text="100%"
+                            android:textColor="@color/textall" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView444"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:paddingLeft="10dp"
+                        android:text="@string/repeating"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textall" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxWorkDays"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/workdays"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp">
+
+                        <CheckBox
+                            android:id="@+id/checkBoxMonday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/monday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxTuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tuesday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxWendsday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wendsday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxThursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thursday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxFriday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/friday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxSaturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/saturday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxSunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sunday"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|start"
+                        android:paddingLeft="10dp"
+                        android:text="@string/typeOfCancel"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/textall" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp">
+
+                        <CheckBox
+                            android:id="@+id/hlidatProbuzeniPohybem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="@string/moveTracking"
+                            android:textColor="@color/textall"
+                            android:textSize="14sp"
+                            android:theme="@style/MyCheckBox" />
+
+                        <ImageView
+                            android:id="@+id/imageViewMove"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="3dp"
+                            app:srcCompat="@drawable/question" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <RadioGroup
+                                android:id="@+id/alarmOffRadioGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:id="@+id/alarmOffPushButtonRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/alarmOffPushButton"
+                                    android:textColor="@color/textall"
+                                    android:theme="@style/MyCheckBox" />
+
+                                <RadioButton
+                                    android:id="@+id/alarmOffCalculateButtonRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/alarmOffCalculate"
+                                    android:textColor="@color/textall"
+                                    android:theme="@style/MyCheckBox" />
+
+                                <LinearLayout
+                                    android:id="@+id/linearLayoutPriklady"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearPriklad2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:id="@+id/textView6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.7"
+                                            android:paddingBottom="10dp"
+                                            android:paddingLeft="20dp"
+                                            android:paddingRight="10dp"
+                                            android:paddingTop="5dp"
+                                            android:text="Úroveň příkladů"
+                                            android:textColor="@color/textall"
+                                            android:visibility="visible" />
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupLevel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.6"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/radioLevel1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="1"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioLevel2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="2"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioLevel3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="3"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioLevel4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="4"
+                                                android:theme="@style/MyCheckBox" />
+
+                                        </RadioGroup>
+
+                                        <ImageView
+                                            android:id="@+id/imageViewCalculate"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:paddingLeft="10dp"
+                                            android:paddingTop="3dp"
+                                            app:srcCompat="@drawable/question" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/linearPriklad1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:id="@+id/textView66"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="0.7"
+                                            android:paddingBottom="10dp"
+                                            android:paddingLeft="20dp"
+                                            android:paddingRight="10dp"
+                                            android:paddingTop="5dp"
+                                            android:text="Počet příkladů"
+                                            android:textColor="@color/textall" />
+
+                                        <RadioGroup
+                                            android:id="@+id/radioGroupCounts"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.6"
+                                            android:orientation="horizontal">
+
+                                            <RadioButton
+                                                android:id="@+id/radioCounts1"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="1"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioCounts2"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="2"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioCounts3"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="3"
+                                                android:theme="@style/MyCheckBox" />
+
+                                            <RadioButton
+                                                android:id="@+id/radioCounts4"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:text="4"
+                                                android:theme="@style/MyCheckBox" />
+                                        </RadioGroup>
+
+                                        <ImageView
+                                            android:id="@+id/imageView4"
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:paddingLeft="10dp"
+                                            app:srcCompat="@color/background" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <RadioButton
+                                    android:id="@+id/alarmOffShakeButtonRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/alarmOffShake"
+                                    android:textColor="@color/textall"
+                                    android:theme="@style/MyCheckBox" />
+
+
+                                <RadioButton
+                                    android:id="@+id/alarmOffQRButtonRadioButton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/alarmOffQR"
+                                    android:textColor="@color/textall"
+                                    android:theme="@style/MyCheckBox" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imageViewLinkQR"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:onClick="openQRLink"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/qrb" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:paddingBottom="20dp"
+                android:paddingRight="20dp">
+
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:onClick="detailniNastaveni"
+                    app:backgroundTint="@color/dalsi"
+                    app:srcCompat="@drawable/wrench" />
+
+                <TextView
+                    android:id="@+id/textViewSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/textall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foregroundGravity="right"
+                    android:onClick="nastavBudik"
+                    android:src="@drawable/check"
+                    app:backgroundTint="@color/dalsi" />
+
+                <TextView
+                    android:id="@+id/textViewAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add"
+                    android:textColor="@color/textall" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
